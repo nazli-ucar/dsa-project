@@ -9,10 +9,8 @@ This project relies on the following databases:
 2. **Traffic Announcements Data**: İBB’s database where the reported traffic accidents are shown with the date of the announcements, the topic of the announcements, the intervention time and how many lanes are closed temporarily because of the accident.
 
 ### Data Collection & Preparation
-- The accident dataset will be filtered by **date, time, location, and severity**.
-- Weather data will be merged based on **date, time, and location**.
-- Data will be cleaned to remove inconsistencies and missing values.
-- Additional preprocessing steps like handling outliers and normalizing variables will be applied.
+- The accident dataset will be filtered by **date, time, location, and severity**. The data will be focused on accidents happened in İstanbul, 2024.
+- Weather data will be observed based on **date, time, and location**. The location will be narrowed to İstanbul and the days when accidents happen. 
 
 ### Analysis Methods
 1. **Exploratory Data Analysis (EDA)**:
@@ -36,12 +34,6 @@ This project relies on the following databases:
 - **Data Availability**: Weather data might not always match accident records perfectly.
 - **Causal vs. Correlational Issues**: Bad weather may correlate with accidents, but other factors (driver behavior, road conditions) might be at play.
 - **Scalability**: The study could be extended to other cities or regions in Turkey.
-
-### Timeline
-- **March 10**: Submit project proposal on GitHub.
-- **April 18**: Collect data, perform exploratory analysis, and run correlation tests.
-- **May 23**: Apply machine learning methods for predictive modeling.
-- **May 30**: Final submission with a well-documented report and visualizations.
 
 ### Tools & Technologies
 - **Programming Language**: Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
