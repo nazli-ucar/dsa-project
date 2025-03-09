@@ -1,7 +1,7 @@
-# Weather Impact on Traffic Accidents in Istanbul
+# Weather Impact on Traffic Accidents in Istanbul in 2024
 
 ### Motivation
-As a driver in İstanbul, traffic safety is one of my biggest concerns. Many factors affect the situation in traffic: how the drivers act, the comfort of the roads, the density of the traffic... One of the less direct factors to affect the drivers' comfort is the weather. Rainy days, the wind and sometimes the snow decreases the driving comfort and indirectly causes traffic accidents. This project's aim to examine the relationship between weather conditions and traffic accidents in İstanbul.
+As a driver in İstanbul, traffic safety is one of my biggest concerns. Many factors affect the situation in traffic: how the drivers act, the comfort of the roads, the density of the traffic... One of the less direct factors to affect the drivers' comfort is the weather. Rainy days, the wind and sometimes the snow decreases the driving comfort and indirectly causes traffic accidents. This project's aim to examine the relationship between weather conditions and traffic accidents in İstanbul. To make the project more relevant, I am using the 2024 data.
 
 ### Data Sources
 This project relies on the following databases:
