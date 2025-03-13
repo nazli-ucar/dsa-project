@@ -16,12 +16,12 @@ This project relies on the following databases:
 
 
 ### Expected Findings
-- Identification of the most dangerous weather conditions for traffic in Istanbul.
-- Understanding the impact of temperature, rain intensity, and visibility on accident rates.
-- Predictive insights that could help authorities issue warnings or adjust speed limits on certain roads during risky weather.
+- Detecting the weather conditions which make the traffic in Istanbul more dangerous.
+- Finding the effect of weather conditions and their consequences such as rainfall density, glaciation and temperature on drivers in Istanbul and their cars.
+- Predictions of the danger of the roads during specific weather event and creating precautions for decreasing the chance of accidents.
 
 
 ### Tools & Technologies
 - **Programming Language**: Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-- **Data Sources**: TÜİK, İBB Open Data Portal, OpenWeather API, MGM
+- **Data Sources**: İBB Open Data Portal, OpenWeather API, MGM
 - **Version Control**: GitHub for project tracking and documentation
