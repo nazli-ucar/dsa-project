@@ -25,3 +25,6 @@ This project relies on the following databases:
 - **Programming Language**: Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
 - **Data Sources**: İBB Open Data Portal, OpenWeather API, MGM
 - **Version Control**: GitHub for project tracking and documentation
+
+###Data Process
+**Data Cleaning**: The weather data was already in the form of csv, so it was well structured and could be cleared. The accident data was separated with semi columns, so it needed to be fixed.
