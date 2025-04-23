@@ -54,6 +54,7 @@ Accident count and temperature have a extremely weak positive correlation. As te
 
 **3. Line Plot**:
 ![image](https://github.com/user-attachments/assets/c90097ac-f500-4589-94c6-3e41adaedadf)
+In 2024, there is no clear trend, lots of variation is going on most of the accidents occur 20 to 60 daily. This supports H0 as there cannot be seen a clear distinct relationship between weather and accidents.
 
 **4. Histograms**:
 ![image](https://github.com/user-attachments/assets/4225c2cd-34a8-4dd1-a453-7b5e23e43c3b)
