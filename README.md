@@ -30,5 +30,6 @@ This project relies on the following databases:
 **Raw Data**
 - **Weather Data**: The weather data was already in the form of csv, so it was well structured and could be cleared. Additionally, it was daily reported for ever day in 2024. On the other hand, some of the data were unnecessary such as temperature, humidity, etc. The data was contained in a text file named 'raw data weather text.txt'.
 - **Traffic Accident Data**: The accident data was separated with semi columns and it was from 2013 to 2025, so it needed to be fixed. Additionally, there were many unnecessary information such as the amount of closed lanes, the reported location, etc. The data was contained in a comma-separated-value file named 'traffic_announcement.csv'.
+
 **Coding**: First, the weather file was read and loaded as a dataframe. Then, the unnecessary datas were erased. Only date and conditions were remaining. After that, the traffic accident file was read by noticing the delimiter as semicolon. Then, groups all the occurences by date and amount. The accident data was filtered by 2024 to match with the weather data. Finally, the weather and accident data were merged by the date and only three columns stayed: Date, weather condition and accident amount. The result was saved in an excel file named 'merged_2024_data.csv'.
   
