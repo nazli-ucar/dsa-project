@@ -32,4 +32,8 @@ This project relies on the following databases:
 - **Traffic Accident Data**: The accident data was separated with semi columns and it was from 2013 to 2025, so it needed to be fixed. Additionally, there were many unnecessary information such as the amount of closed lanes, the reported location, etc. The data was contained in a comma-separated-value file named 'traffic_announcement.csv'.
 
 **Coding**: First, the weather file was read and loaded as a dataframe. Then, the unnecessary datas were erased. Only date, temperature, humdity and windgust were remaining. After that, the traffic accident file was read by noticing the delimiter as semicolon. Then, groups all the occurences by date and amount. The accident data was filtered by 2024 to match with the weather data. Finally, the weather and accident data were merged by the date and only three columns stayed: Date, accident amount, temperature, windgust and humidity. The result was saved in an excel file named "final_numeric_weather_accidents.xlsx".
-  
+
+### Exploratory Data Analysis (EDA)
+**1.Descriptive Statistics**: 
+![image](https://github.com/user-attachments/assets/02ca931c-1496-49d7-903e-930aa6fdef07)
+
