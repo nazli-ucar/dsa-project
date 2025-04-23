@@ -6,11 +6,11 @@ import seaborn as sns
 df = pd.read_excel("final_numeric_weather_accidents.xlsx")  # or read_csv()
 
 # --- 1. Summary Stats ---
-print("📌 Summary Statistics:")
+print("Summary Statistics:")
 print(df.describe())
 
 # --- 2. Correlation Matrix ---
-print("\n📊 Correlation Matrix:")
+print("\n Correlation Matrix:")
 print(df[['Accident Count', 'Temperature', 'Windgust', 'Humidity']].corr())
 
 # --- 3. Line Plot: Accident Count Over Time ---
@@ -114,4 +114,38 @@ plt.title("Accident Count by Humidity Range")
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.savefig("boxplot_humidity_bins.png")
+plt.show()
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_excel("final_numeric_weather_accidents.xlsx")
+
+# Set plot style
+sns.set(style="whitegrid")
+
+# --- 1. Scatter: Accident Count vs Temperature ---
+plt.figure(figsize=(6, 4))
+sns.regplot(x='Temperature', y='Accident Count', data=df, scatter_kws={'alpha':0.6})
+plt.title("Accident Count vs Temperature")
+plt.tight_layout()
+plt.savefig("scatter_temp_accidents.png")
+plt.show()
+
+# --- 2. Scatter: Accident Count vs Windgust ---
+plt.figure(figsize=(6, 4))
+sns.regplot(x='Windgust', y='Accident Count', data=df, scatter_kws={'alpha':0.6})
+plt.title("Accident Count vs Windgust")
+plt.tight_layout()
+plt.savefig("scatter_windgust_accidents.png")
+plt.show()
+
+# --- 3. Scatter: Accident Count vs Humidity ---
+plt.figure(figsize=(6, 4))
+sns.regplot(x='Humidity', y='Accident Count', data=df, scatter_kws={'alpha':0.6})
+plt.title("Accident Count vs Humidity")
+plt.tight_layout()
+plt.savefig("scatter_humidity_accidents.png")
 plt.show()
