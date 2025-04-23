@@ -32,5 +32,5 @@ accident_2024 = accident_counts[
 final_df = pd.merge(accident_2024, weather_clean, on='Date', how='inner')
 final_df = final_df[['Date', 'Weather Condition', 'Accident Count']]
 
-# View or save final data print(final_df)
-final_df.to_csv("merged_2024_data.csv", index=False)
+print(final_df)
+#final_df.to_csv("merged_2024_data.csv", index=False)
