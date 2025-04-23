@@ -27,4 +27,4 @@ This project relies on the following databases:
 - **Version Control**: GitHub for project tracking and documentation
 
 ### Data Process
-**Data Cleaning**: The weather data was already in the form of csv, so it was well structured and could be cleared. The accident data was separated with semi columns, so it needed to be fixed.
+- **Data Cleaning**: The weather data was already in the form of csv, so it was well structured and could be cleared. The accident data was separated with semi columns and it was from 2013 to 2025, so it needed to be fixed.
