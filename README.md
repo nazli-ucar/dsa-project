@@ -38,6 +38,7 @@ This project relies on the following databases:
 ![image](https://github.com/user-attachments/assets/02ca931c-1496-49d7-903e-930aa6fdef07)
 
 **2. Correlation Matrix**:
+
 ![image](https://github.com/user-attachments/assets/65126c47-e2f8-4281-9da3-f1e994e68063)
 
 **3. Line Plot**:
@@ -47,11 +48,13 @@ This project relies on the following databases:
 ![image](https://github.com/user-attachments/assets/4225c2cd-34a8-4dd1-a453-7b5e23e43c3b)
 
 **5. Bar Charts**:
+
 ![image](https://github.com/user-attachments/assets/b878b96d-1a67-4eac-a8af-1f0c9a9f939c)
 ![image](https://github.com/user-attachments/assets/df31bd09-9254-4596-a89a-ea112956a360)
 ![image](https://github.com/user-attachments/assets/baf5c868-ddd8-49dd-9328-5fe9fb74f944)
 
 **6. Boxplot**:
+
 ![image](https://github.com/user-attachments/assets/275a265e-6988-4d33-94ad-4eb988e1bdd0)
 ![image](https://github.com/user-attachments/assets/a752196d-dc19-4a68-a977-6cafcf44b56f)
 ![image](https://github.com/user-attachments/assets/9d2a8e2c-d130-4f60-8411-8f2fa434b19a)
