@@ -1,0 +1,38 @@
+import pandas as pd
+import statsmodels.api as sm
+
+# Load your dataset
+df = pd.read_excel("final_numeric_weather_accidents.xlsx")  # adjust path if needed
+
+# Define independent variables and target
+X = df[['Temperature', 'Windgust', 'Humidity']]
+y = df['Accident Count']
+
+# Add constant to the model
+X = sm.add_constant(X)
+
+# Fit the model
+model = sm.OLS(y, X).fit()
+
+# Extract p-values and R²
+pvals = model.pvalues
+r2 = model.rsquared
+
+# --- Interpret Results ---
+print(" Hypothesis Test Results (α = 0.05):\n")
+
+for feature in ['Temperature', 'Windgust', 'Humidity']:
+    p = pvals[feature]
+    if p < 0.05:
+        print(f" {feature} has a statistically significant effect on accident count (p = {p:.4f}) → Reject H₀")
+    else:
+        print(f" {feature} does NOT have a statistically significant effect on accident count (p = {p:.4f}) → Fail to reject H₀")
+
+# --- R² Interpretation ---
+print(f"\n R² score of the model: {r2:.4f}")
+if r2 < 0.1:
+    print(" Model explains very little of the variation in accident count.")
+elif r2 < 0.5:
+    print(" Model explains a moderate amount of the variation in accident count.")
+else:
+    print(" Model explains a strong portion of the variation in accident count.")
