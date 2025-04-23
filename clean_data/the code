@@ -1,0 +1,36 @@
+import pandas as pd
+import datetime
+from io import StringIO
+
+#Loading the Weather Data 
+with open("raw data weather text.txt", "r", encoding="utf-8") as f:
+    weather_text = f.read()
+
+weather_df = pd.read_csv(StringIO(weather_text))
+
+# Cleaning the Weather Data
+weather_df['Date'] = pd.to_datetime(weather_df['datetime']).dt.date
+weather_clean = weather_df[['Date', 'conditions']].rename(columns={'conditions': 'Weather Condition'})
+
+# Loading Traffic Data
+traffic_df = pd.read_csv("traffic_announcement.csv", delimiter=';')
+
+# Cleaning the Traffic Data
+traffic_df['ANNOUNCEMENT_STARTING_DATETIME'] = pd.to_datetime(traffic_df['ANNOUNCEMENT_STARTING_DATETIME'], errors='coerce')
+traffic_df['Date'] = traffic_df['ANNOUNCEMENT_STARTING_DATETIME'].dt.date
+
+# Count daily accidents
+accident_counts = traffic_df.groupby('Date').size().reset_index(name='Accident Count')
+
+# Filter traffic data to 2024 only
+accident_2024 = accident_counts[
+    (accident_counts['Date'] >= datetime.date(2024, 1, 1)) &
+    (accident_counts['Date'] <= datetime.date(2024, 12, 31))
+]
+
+# --- Final Merge ---
+final_df = pd.merge(accident_2024, weather_clean, on='Date', how='inner')
+final_df = final_df[['Date', 'Weather Condition', 'Accident Count']]
+
+# View or save final data print(final_df)
+final_df.to_csv("merged_2024_data.csv", index=False)
