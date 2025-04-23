@@ -37,15 +37,18 @@ This project relies on the following databases:
 **1. Descriptive Statistics**: 
 
 ![image](https://github.com/user-attachments/assets/02ca931c-1496-49d7-903e-930aa6fdef07)
-The average number of daily accidents in Istanbul 2024 was 37.63 In a day minimum 11, maximum 87 accidents had happened. The standard deviation is 10.95 which means that the daily accident amounts vary. 
-Temperature was minimum 35.9 Fahrenheit and maximum 86.4 Fahrenheit in Istanbul with a mean of 62.59 and standard deviation of 12.97. This shows that Istanbul lived many seasons. 
-Windgust was between 8.90 and 74.30 mph with a mean of 22.62 and standard deviation of 7.22.
-Humidity was between 44.50% to 92.00% with a mean of 71.96% and standard deviation of 9.37%. We can say that IStanbul was a humid place.
+-The average number of daily accidents in Istanbul 2024 was 37.63 In a day minimum 11, maximum 87 accidents had happened. The standard deviation is 10.95 which means that the daily accident amounts vary. 
+-Temperature was minimum 35.9 Fahrenheit and maximum 86.4 Fahrenheit in Istanbul with a mean of 62.59 and standard deviation of 12.97. This shows that Istanbul lived many seasons. 
+-Windgust was between 8.90 and 74.30 mph with a mean of 22.62 and standard deviation of 7.22.
+-Humidity was between 44.50% to 92.00% with a mean of 71.96% and standard deviation of 9.37%. We can say that Istanbul was a humid place.
 
 
 **2. Correlation Matrix**:
 
 ![image](https://github.com/user-attachments/assets/65126c47-e2f8-4281-9da3-f1e994e68063)
+-Accident count and windgust tend to have a negative correlation. As windgust increases, accident counts increase slightly. 
+During windy days, drivers can be more careful due to the increasing tendency of accidents.
+
 
 **3. Line Plot**:
 ![image](https://github.com/user-attachments/assets/c90097ac-f500-4589-94c6-3e41adaedadf)
