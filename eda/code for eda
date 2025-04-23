@@ -83,3 +83,35 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.savefig("bar_humidity_bins.png")
 plt.show()
+
+# Optional: create binned categories for clearer boxplot visuals
+df['Temp Bin'] = pd.cut(df['Temperature'], bins=6)
+df['Wind Bin'] = pd.cut(df['Windgust'], bins=6)
+df['Humidity Bin'] = pd.cut(df['Humidity'], bins=6)
+
+# --- Boxplot: Accident Count by Temperature Bin ---
+plt.figure(figsize=(8, 5))
+sns.boxplot(x='Temp Bin', y='Accident Count', data=df)
+plt.title("Accident Count by Temperature Range")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig("boxplot_temp_bins.png")
+plt.show()
+
+# --- Boxplot: Accident Count by Windgust Bin ---
+plt.figure(figsize=(8, 5))
+sns.boxplot(x='Wind Bin', y='Accident Count', data=df)
+plt.title("Accident Count by Windgust Range")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig("boxplot_windgust_bins.png")
+plt.show()
+
+# --- Boxplot: Accident Count by Humidity Bin ---
+plt.figure(figsize=(8, 5))
+sns.boxplot(x='Humidity Bin', y='Accident Count', data=df)
+plt.title("Accident Count by Humidity Range")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig("boxplot_humidity_bins.png")
+plt.show()
