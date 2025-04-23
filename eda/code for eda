@@ -1,0 +1,85 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the data
+df = pd.read_excel("final_numeric_weather_accidents.xlsx")  # or read_csv()
+
+# --- 1. Summary Stats ---
+print("📌 Summary Statistics:")
+print(df.describe())
+
+# --- 2. Correlation Matrix ---
+print("\n📊 Correlation Matrix:")
+print(df[['Accident Count', 'Temperature', 'Windgust', 'Humidity']].corr())
+
+# --- 3. Line Plot: Accident Count Over Time ---
+plt.figure(figsize=(10, 4))
+plt.plot(pd.to_datetime(df['Date']), df['Accident Count'], marker='o', linestyle='-')
+plt.title("Accidents Over Time (2024)")
+plt.xlabel("Date")
+plt.ylabel("Accident Count")
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("eda_lineplot_accidents.png")
+plt.show()
+
+# --- 4. Histograms ---
+df[['Accident Count', 'Temperature', 'Windgust', 'Humidity']].hist(
+    bins=15, figsize=(12, 6), color='skyblue', edgecolor='black'
+)
+plt.suptitle("Histograms of Numeric Features")
+plt.tight_layout()
+plt.savefig("eda_histograms.png")
+plt.show()
+
+# --- 5. Correlation Heatmap ---
+plt.figure(figsize=(6, 4))
+sns.heatmap(df[['Accident Count', 'Temperature', 'Windgust', 'Humidity']].corr(),
+            annot=True, cmap='coolwarm', fmt=".2f")
+plt.title("Correlation Heatmap")
+plt.tight_layout()
+plt.savefig("eda_correlation_heatmap.png")
+plt.show()
+
+# --- Bar Chart 1: Temperature Bins ---
+df['Temp Bin'] = pd.cut(df['Temperature'], bins=6)
+temp_group = df.groupby('Temp Bin')['Accident Count'].mean()
+
+plt.figure(figsize=(8, 5))
+temp_group.plot(kind='bar', color='deepskyblue')
+plt.title("Avg Accident Count by Temperature Bin")
+plt.ylabel("Avg Accidents")
+plt.xlabel("Temperature Range (°F)")
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig("bar_temp_bins.png")
+plt.show()
+
+# --- Bar Chart 2: Windgust Bins ---
+df['Wind Bin'] = pd.cut(df['Windgust'], bins=6)
+wind_group = df.groupby('Wind Bin')['Accident Count'].mean()
+
+plt.figure(figsize=(8, 5))
+wind_group.plot(kind='bar', color='mediumpurple')
+plt.title("Avg Accident Count by Windgust Bin")
+plt.ylabel("Avg Accidents")
+plt.xlabel("Windgust Range (mph)")
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig("bar_windgust_bins.png")
+plt.show()
+
+# --- Bar Chart 3: Humidity Bins ---
+df['Humidity Bin'] = pd.cut(df['Humidity'], bins=6)
+humidity_group = df.groupby('Humidity Bin')['Accident Count'].mean()
+
+plt.figure(figsize=(8, 5))
+humidity_group.plot(kind='bar', color='mediumseagreen')
+plt.title("Avg Accident Count by Humidity Bin")
+plt.ylabel("Avg Accidents")
+plt.xlabel("Humidity Range (%)")
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig("bar_humidity_bins.png")
+plt.show()
