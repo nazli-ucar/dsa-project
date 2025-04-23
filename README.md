@@ -35,6 +35,7 @@ This project relies on the following databases:
 
 ### Exploratory Data Analysis (EDA)
 **1. Descriptive Statistics**: 
+
 ![image](https://github.com/user-attachments/assets/02ca931c-1496-49d7-903e-930aa6fdef07)
 
 **2. Correlation Matrix**:
