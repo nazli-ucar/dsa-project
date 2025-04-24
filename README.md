@@ -79,9 +79,13 @@ As the humditiy range increases, the number of accidents tend to slightly decrea
 **6. Boxplot**:
 
 ![image](https://github.com/user-attachments/assets/275a265e-6988-4d33-94ad-4eb988e1bdd0)
-![image](https://github.com/user-attachments/assets/a752196d-dc19-4a68-a977-6cafcf44b56f)
-![image](https://github.com/user-attachments/assets/9d2a8e2c-d130-4f60-8411-8f2fa434b19a)
+There is no clear pattern in accident counts and temperature ranges relationship. The median shift down or up not in a pattern. There are some outliers, but that does not increase in a pattern either. 
 
+![image](https://github.com/user-attachments/assets/a752196d-dc19-4a68-a977-6cafcf44b56f)
+As the windgust range increases the range of accidents and the median of the accidents slightly decrease. There are some outliers in the first 3 ranges. The first one has the highest range. This indicates that as the wind got faster, the drivers became more careful.
+
+![image](https://github.com/user-attachments/assets/9d2a8e2c-d130-4f60-8411-8f2fa434b19a)
+As the humidity increases, the accident amount tends to decrease. There are some outliers, but no pattern is shown in that part. The median and the range slightly decreases. This indicates negative correlation. During high humidity, maybe it rained and the drivers became more careful.
 
 
 
