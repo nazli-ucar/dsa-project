@@ -67,8 +67,14 @@ The x axis shows the windgust speed in mph and the y axis shows the number of da
 **5. Bar Charts**:
 
 ![image](https://github.com/user-attachments/assets/b878b96d-1a67-4eac-a8af-1f0c9a9f939c)
+In each temperature range, the accidents occur in similar amounts. There is no trend. 
+
 ![image](https://github.com/user-attachments/assets/df31bd09-9254-4596-a89a-ea112956a360)
+As the windgust range increases, the amount of accidents slightly decrease. The last bin is an exception. It can be said that the windgust and traffic accidents have a negative correlation with some exceptions.
+
 ![image](https://github.com/user-attachments/assets/baf5c868-ddd8-49dd-9328-5fe9fb74f944)
+As the humditiy range increases, the number of accidents tend to slightly decrease. It is shown that there is a weak correlation between humidity range and accident amount.
+
 
 **6. Boxplot**:
 
