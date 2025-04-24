@@ -88,6 +88,16 @@ As the windgust range increases the range of accidents and the median of the acc
 As the humidity increases, the accident amount tends to decrease. There are some outliers, but no pattern is shown in that part. The median and the range slightly decreases. This indicates negative correlation. During high humidity, maybe it rained and the drivers became more careful.
 
 
+**7. Scatterplot**:
+
+![image](https://github.com/user-attachments/assets/9d4d7e35-0442-4001-8873-3da480b31013)
+There is no trend. The trendline is flat. No correlation.
+
+![image](https://github.com/user-attachments/assets/bf78d96c-ecab-42e4-b7a3-701b8d330019)
+Most of the points are on to the left. The trendline slopes downwards. There is weak negative correlation. As the windgust increases, the amount of accidents decrease. 
+
+![image](https://github.com/user-attachments/assets/0bc5dc16-1c0e-43f0-8038-1f0b1bc42e02)
+The trendline is slightly downwards. There is weak negative correlation. As the humidity increases, the accident amount decreases. 
 
 
 
