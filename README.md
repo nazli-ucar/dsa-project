@@ -12,7 +12,7 @@ This project relies on the following databases:
 
 ### Data Collection & Preparation
 - The accident dataset will be filtered by **date, time, location, and severity**. The data will be focused on accidents happened in İstanbul, 2024.
-- Weather data will be observed based on **date, time, and location**. The location will be narrowed to İstanbul and the days when accidents happen. 
+- Weather data will be observed based on **date, temperature, humidity and windgust**. The location will be narrowed to İstanbul and the days when accidents happen. 
 
 
 ### Expected Findings
@@ -23,7 +23,7 @@ This project relies on the following databases:
 
 ### Tools & Technologies
 - **Programming Language**: Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-- **Data Sources**: İBB Open Data Portal, OpenWeather API, MGM
+- **Data Sources**: Visual Crossing, OpenWeather API, MGM
 - **Version Control**: GitHub for project tracking and documentation
 
 ### Data Cleaning
@@ -36,84 +36,85 @@ This project relies on the following databases:
 ### Exploratory Data Analysis (EDA)
 **1. Descriptive Statistics**: 
 
-![image](https://github.com/user-attachments/assets/02ca931c-1496-49d7-903e-930aa6fdef07)
-The average number of daily accidents in Istanbul 2024 was 37.63 In a day minimum 11, maximum 87 accidents had happened. The standard deviation is 10.95 which means that the daily accident amounts vary. 
-Temperature was minimum 35.9 Fahrenheit and maximum 86.4 Fahrenheit in Istanbul with a mean of 62.59 and standard deviation of 12.97. This shows that Istanbul lived many seasons. 
-Windgust was between 8.90 and 74.30 mph with a mean of 22.62 and standard deviation of 7.22.
+![image](https://github.com/user-attachments/assets/02ca931c-1496-49d7-903e-930aa6fdef07)  
+The average number of daily accidents in Istanbul 2024 was 37.63 In a day minimum 11, maximum 87 accidents had happened. The standard deviation is 10.95 which means that the daily accident amounts vary.   
+Temperature was minimum 35.9 Fahrenheit and maximum 86.4 Fahrenheit in Istanbul with a mean of 62.59 and standard deviation of 12.97. This shows that Istanbul lived many seasons.   
+Windgust was between 8.90 and 74.30 mph with a mean of 22.62 and standard deviation of 7.22.  
 Humidity was between 44.50% to 92.00% with a mean of 71.96% and standard deviation of 9.37%. We can say that Istanbul was a humid place.
 
 
 **2. Correlation Matrix**:
 
-![image](https://github.com/user-attachments/assets/65126c47-e2f8-4281-9da3-f1e994e68063)
+![image](https://github.com/user-attachments/assets/65126c47-e2f8-4281-9da3-f1e994e68063)  
 Accident count and windgust tend to have a negative correlation. As windgust decreases, accident counts increase slightly. 
-During windy days, drivers can be more careful due to the increasing tendency of accidents.
-Accident count and humdity have a negative weak correlation. As humidity decreases, accidents occur slightly more. 
+During windy days, drivers can be more careful due to the increasing tendency of accidents.  
+Accident count and humdity have a negative weak correlation. As humidity decreases, accidents occur slightly more.   
 Accident count and temperature have a extremely weak positive correlation. As temperature increases, accidents may occur very slightly more.
 
 
 **3. Line Plot**:
-![image](https://github.com/user-attachments/assets/c90097ac-f500-4589-94c6-3e41adaedadf)
+![image](https://github.com/user-attachments/assets/c90097ac-f500-4589-94c6-3e41adaedadf)  
 In 2024, there is no clear trend, lots of variation is going on most of the accidents occur 20 to 60 daily. This supports H0 as there cannot be seen a clear distinct relationship between weather and accidents.
 
 **4. Histograms**:
 ![image](https://github.com/user-attachments/assets/4225c2cd-34a8-4dd1-a453-7b5e23e43c3b)
 
-The x axis shows the number of accidents in a day and y axis shows the number of days that had many accidents. Accident amount is lightly skewed to the right. The majority is between 20 and 50. There are some outliers.
-Then x axis shows the daily average temperature in Fahrenheit and the y axis shows the number of days with that temperature range. It is bimodal, has 2 peak points which are 60 and 80 Fahrenheit. The range is wide. This indicates date Istanbul experienced many seasons in a year.
+The x axis shows the number of accidents in a day and y axis shows the number of days that had many accidents. Accident amount is lightly skewed to the right. The majority is between 20 and 50. There are some outliers.  
+Then x axis shows the daily average temperature in Fahrenheit and the y axis shows the number of days with that temperature range. It is bimodal, has 2 peak points which are 60 and 80 Fahrenheit. The range is wide. This indicates date Istanbul experienced many seasons in a year.  
 The x axis shows the windgust speed in mph and the y axis shows the number of days with that windgust range. The histogram is left-skewed the wind was mostly low. The x axis shows humidity percentage and the y axis shows the number of days with that humidity. It looks like it is normally distributed but has more density on the right side. The humidity is centered around 70%.
 
 
 **5. Bar Charts**:
 
-![image](https://github.com/user-attachments/assets/b878b96d-1a67-4eac-a8af-1f0c9a9f939c)
+![image](https://github.com/user-attachments/assets/b878b96d-1a67-4eac-a8af-1f0c9a9f939c)  
 In each temperature range, the accidents occur in similar amounts. There is no trend. 
 
-![image](https://github.com/user-attachments/assets/df31bd09-9254-4596-a89a-ea112956a360)
+![image](https://github.com/user-attachments/assets/df31bd09-9254-4596-a89a-ea112956a360)  
 As the windgust range increases, the amount of accidents slightly decrease. The last bin is an exception. It can be said that the windgust and traffic accidents have a negative correlation with some exceptions.
 
-![image](https://github.com/user-attachments/assets/baf5c868-ddd8-49dd-9328-5fe9fb74f944)
+![image](https://github.com/user-attachments/assets/baf5c868-ddd8-49dd-9328-5fe9fb74f944)  
 As the humditiy range increases, the number of accidents tend to slightly decrease. It is shown that there is a weak correlation between humidity range and accident amount.
 
 
 **6. Boxplot**:
 
-![image](https://github.com/user-attachments/assets/275a265e-6988-4d33-94ad-4eb988e1bdd0)
+![image](https://github.com/user-attachments/assets/275a265e-6988-4d33-94ad-4eb988e1bdd0)  
 There is no clear pattern in accident counts and temperature ranges relationship. The median shift down or up not in a pattern. There are some outliers, but that does not increase in a pattern either. 
 
-![image](https://github.com/user-attachments/assets/a752196d-dc19-4a68-a977-6cafcf44b56f)
+![image](https://github.com/user-attachments/assets/a752196d-dc19-4a68-a977-6cafcf44b56f)  
 As the windgust range increases the range of accidents and the median of the accidents slightly decrease. There are some outliers in the first 3 ranges. The first one has the highest range. This indicates that as the wind got faster, the drivers became more careful.
 
-![image](https://github.com/user-attachments/assets/9d2a8e2c-d130-4f60-8411-8f2fa434b19a)
+![image](https://github.com/user-attachments/assets/9d2a8e2c-d130-4f60-8411-8f2fa434b19a)  
 As the humidity increases, the accident amount tends to decrease. There are some outliers, but no pattern is shown in that part. The median and the range slightly decreases. This indicates negative correlation. During high humidity, maybe it rained and the drivers became more careful.
 
 
 **7. Scatterplot**:
 
-![image](https://github.com/user-attachments/assets/9d4d7e35-0442-4001-8873-3da480b31013)
+![image](https://github.com/user-attachments/assets/9d4d7e35-0442-4001-8873-3da480b31013)  
 There is no trend. The trendline is flat. No correlation.
 
-![image](https://github.com/user-attachments/assets/bf78d96c-ecab-42e4-b7a3-701b8d330019)
+![image](https://github.com/user-attachments/assets/bf78d96c-ecab-42e4-b7a3-701b8d330019)  
 Most of the points are on to the left. The trendline slopes downwards. There is weak negative correlation. As the windgust increases, the amount of accidents decrease. 
 
-![image](https://github.com/user-attachments/assets/0bc5dc16-1c0e-43f0-8038-1f0b1bc42e02)
+![image](https://github.com/user-attachments/assets/0bc5dc16-1c0e-43f0-8038-1f0b1bc42e02)  
 The trendline is slightly downwards. There is weak negative correlation. As the humidity increases, the accident amount decreases. 
 
 
 ### Hypothesis Testing
 **P-Test**: The p-test is 2 sided and has a significance level of 0.05
 - **Temperature**
-Ho: Temperature did not affect the number of traffic accidents in Istanbul 2024.  
-H1: Temperature affected the number of traffic accidents in Istanbul 2024.
+Ho: Temperature did not affect the number of traffic accidents in Istanbul 2024.    
+H1: Temperature affected the number of traffic accidents in Istanbul 2024.  
 **Results**: P value of temperature: 0.75 so we cannot reject H0. This means that temperature does not have significant effect on accident counts. 
 - **Humidity**
-Ho: Humidity did not affect the number of traffic accidents in Istanbul 2024.  
-H1: Humidity affected the number of traffic accidents in Istanbul 2024.
+Ho: Humidity did not affect the number of traffic accidents in Istanbul 2024.    
+H1: Humidity affected the number of traffic accidents in Istanbul 2024.  
 **Results**: P value of humidity: 0.0116, so we reject H0 since its p value is smaller than 0.05. This means that humidity has an effect on the accident count.
 - **Windgust**
-Ho: Windgust did not affect the number of traffic accidents in Istanbul 2024.
-H1: Windgust affected the number of traffic accidents in Istanbul 2024.
+Ho: Windgust did not affect the number of traffic accidents in Istanbul 2024.  
+H1: Windgust affected the number of traffic accidents in Istanbul 2024.  
 **Results**: P value of windgust: 0.0001, so we reject H0 since its p value is smaller than 0.05. This means that windgust has an effect on the accident count.
+- **Overall**: The results are similar to the observations which were done with EDA. The p test and the EDAs both claim that temperature did not affect accident counts in Istanbul 2024,  but humidity and windgust had weak negative correlation with the counts. On the other hand, after the p test, the found r square value claims that the weather data explains only the 7% of the variation among the daily weather counts; so this result suggests even though less humidity and less windgust increased the count, it explains very little of the reasons behind the accidents.
  
 
 
