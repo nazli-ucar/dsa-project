@@ -100,6 +100,20 @@ Most of the points are on to the left. The trendline slopes downwards. There is 
 The trendline is slightly downwards. There is weak negative correlation. As the humidity increases, the accident amount decreases. 
 
 
-
+### Hypothesis Testing
+**P-Test**: The p-test is 2 sided and has a significance level of 0.05
+-**Temperature**
+Ho: Temperature did not affect the number of traffic accidents in Istanbul 2024.
+H1: Temperature affected the number of traffic accidents in Istanbul 2024.
+**Results**: P value of temperature: 0.75 so we cannot reject H0. This means that temperature does not have significant effect on accident counts. 
+-**Humidity**
+Ho: Humidity did not affect the number of traffic accidents in Istanbul 2024.
+H1: Humidity affected the number of traffic accidents in Istanbul 2024.
+**Results**: P value of humidity: 0.0116, so we reject H0 since its p value is smaller than 0.05. This means that humidity has an effect on the accident count.
+-**Windgust**
+Ho: Windgust did not affect the number of traffic accidents in Istanbul 2024.
+H1: Windgust affected the number of traffic accidents in Istanbul 2024.
+**Results**: P value of windgust: 0.0001, so we reject H0 since its p value is smaller than 0.05. This means that windgust has an effect on the accident count.
+ 
 
 
