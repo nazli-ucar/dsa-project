@@ -3,7 +3,7 @@
 This project's aim is to examine the relationship between weather conditions and traffic accidents in İstanbul. To make the project more relevant, the data will be limited to 2024 and İstanbul province.
 
 ### Motivation
-As a driver in İstanbul, traffic safety is one of my biggest concerns. Many factors affect the situation in traffic: how the drivers act, the comfort of the roads, the density of the traffic... One of the less direct factors to affect the drivers' comfort is the weather. Rainy days, the wind and sometimes the snow decreases the driving comfort and indirectly causes traffic accidents. To become a more conscious driver, the relationship must be realized. 
+As a driver in Istanbul, traffic safety is one of my biggest concerns. Many factors affect the situation in traffic: how the drivers act, the comfort of the roads, the density of the traffic... One of the less direct factors to affect the drivers' comfort is the weather. Rainy days, the wind and sometimes the snow decreases the driving comfort and indirectly causes traffic accidents. To become a more conscious driver, the relationship must be realized. 
 
 ### Data Sources
 This project relies on the following databases:
@@ -17,7 +17,7 @@ This project relies on the following databases:
 
 ### Expected Findings
 - Detecting the weather conditions which make the traffic in Istanbul more dangerous.
-- Finding the effect of weather conditions and their consequences such as rainfall density, glaciation and temperature on drivers in Istanbul and their cars.
+- Finding the effect of weather conditions and their consequences on drivers in Istanbul and their cars.
 - Predictions of the danger of the roads during specific weather event and creating precautions for decreasing the chance of accidents.
 
 
