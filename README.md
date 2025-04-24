@@ -59,6 +59,11 @@ In 2024, there is no clear trend, lots of variation is going on most of the acci
 **4. Histograms**:
 ![image](https://github.com/user-attachments/assets/4225c2cd-34a8-4dd1-a453-7b5e23e43c3b)
 
+The x axis shows the number of accidents in a day and y axis shows the number of days that had many accidents. Accident amount is lightly skewed to the right. The majority is between 20 and 50. There are some outliers.
+Then x axis shows the daily average temperature in Fahrenheit and the y axis shows the number of days with that temperature range. It is bimodal, has 2 peak points which are 60 and 80 Fahrenheit. The range is wide. This indicates date Istanbul experienced many seasons in a year.
+The x axis shows the windgust speed in mph and the y axis shows the number of days with that windgust range. The histogram is left-skewed the wind was mostly low. The x axis shows humidity percentage and the y axis shows the number of days with that humidity. It looks like it is normally distributed but has more density on the right side. The humidity is centered around 70%.
+
+
 **5. Bar Charts**:
 
 ![image](https://github.com/user-attachments/assets/b878b96d-1a67-4eac-a8af-1f0c9a9f939c)
