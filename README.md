@@ -117,7 +117,9 @@ H1: Windgust affected the number of traffic accidents in Istanbul 2024.
 - **Overall**: The results are similar to the observations which were done with EDA. The p test and the EDAs both claim that temperature did not affect accident counts in Istanbul 2024,  but humidity and windgust had weak negative correlation with the counts. On the other hand, after the p test, the found r square value claims that the weather data explains only the 7% of the variation among the daily weather counts; so this result suggests even though less humidity and less windgust increased the count, it explains very little of the reasons behind the accidents.
 
 ### Machine Learning Techniques  
-![image](https://github.com/user-attachments/assets/f802e79b-f21e-4948-ba42-965707c6181c)  
+  
 MLT was used to predict the daily number of traffic accidents by using weather conditions data(temperature, windgust and humdity) in Istanbul 2024.  
+![image](https://github.com/user-attachments/assets/f802e79b-f21e-4948-ba42-965707c6181c)  
+Since the amount of traffic accidents is a continuous data, it is wise to use regression models. That's why, 3 types of regression models were used.
 
 
