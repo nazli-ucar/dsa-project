@@ -115,6 +115,6 @@ Ho: Windgust did not affect the number of traffic accidents in Istanbul 2024.
 H1: Windgust affected the number of traffic accidents in Istanbul 2024.  
 **Results**: P value of windgust: 0.0001, so we reject H0 since its p value is smaller than 0.05. This means that windgust has an effect on the accident count.
 - **Overall**: The results are similar to the observations which were done with EDA. The p test and the EDAs both claim that temperature did not affect accident counts in Istanbul 2024,  but humidity and windgust had weak negative correlation with the counts. On the other hand, after the p test, the found r square value claims that the weather data explains only the 7% of the variation among the daily weather counts; so this result suggests even though less humidity and less windgust increased the count, it explains very little of the reasons behind the accidents.
- 
 
+### Machine Learning Techniques
 
