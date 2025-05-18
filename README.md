@@ -121,10 +121,13 @@ H1: Windgust affected the number of traffic accidents in Istanbul 2024.
 MLT was used to predict the daily number of traffic accidents by using weather conditions data(temperature, windgust and humdity) in Istanbul 2024.  
 ![image](https://github.com/user-attachments/assets/f802e79b-f21e-4948-ba42-965707c6181c)  
 Since the amount of traffic accidents is a continuous data, it is wise to use regression models. That's why, 3 types of regression models were used.  
-The linear regression model explained 20% of the variation which is not ideal, but the highest result among other regression models.  
+The linear regression model explained 20% of the variation which is not ideal, but the highest result among other regression models. It has a MAE of 7.39 and RMSE of 9.62 which means that on average, the model's daily accident prediction are in 7-10 difference from the actual results.  
 Random forest showed half of the linearby 10% which is not enough.  
 k-NN performed the worst, even worse than just taking the average. It was underperforming.  
 These low r squares indicate that at best, the weather features explain the 20% of the variety among the number of daily traffic accidents, which is not enough. The weather somehow affects the number of traffic accidents, but not just by itself. It affects weakly.  
-During hypothesis testing, it was indicated that temperature did not affect accidents at all and humdity and windgust affected mildly. This MLT result validates the hypothesis testing explanation.
+During hypothesis testing, it was indicated that temperature did not affect accidents at all and humdity and windgust affected mildly. This MLT result validates the hypothesis testing explanation. To accurately predict the amount of traffic accidents in Istanbul 2024 in a day, more information must be used.  
+![image](https://github.com/user-attachments/assets/4f523fc3-e697-4e2f-a678-b93243bb15e3)  
+
+
 
 
