@@ -128,6 +128,11 @@ These low r squares indicate that at best, the weather features explain the 20% 
 During hypothesis testing, it was indicated that temperature did not affect accidents at all and humdity and windgust affected mildly. This MLT result validates the hypothesis testing explanation. To accurately predict the amount of traffic accidents in Istanbul 2024 in a day, more information must be used.  
 ![image](https://github.com/user-attachments/assets/4f523fc3-e697-4e2f-a678-b93243bb15e3)  
 
+  From these plots, the two models can be compared. The red line indicates the perfect match of the predictions and the actual results and the dots indicate the prediction of the model.  
+  The linear model usually does not predict above 50 and usualy is spread around the mean. That's why it cannot predict the outlying numbers. When the actual results are around 30-40, the model predicts well, but other than that it lacks accuracy.  
+  The random forest model has the predictions more spread. The result range is similar to the linear model, but inside the range, the predictions are more spread and have more unique results unline the linear. This variability makes this model slightly better at detecting the outliers. Still, this model is more deviated from the red line than the linear model, which explains the r square results.  
+  It can be said that the linear model is more stable and explains the variety better than the random forest model, but still it does not have the ideal explanation. 
+
 
 
 
